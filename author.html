@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Bio Section</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .social {
+      width: 24px;
+      height: 24px;
+      border-radius: 10%;
+      display: grid;
+      place-items: center;
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    .threads:hover {
+      background-color: #4267B2;
+    }
+
+    .instagram:hover {
+      background-color: #6dbfb8;
+    }
+
+    .youtube:hover {
+      background-color: #FF0000;
+    }
+
+    .whatsapp:hover {
+      background-color: #26de5d;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
+
+    .author-bio {
+  display: flex;
+  align-items: center;
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-date {
+  font-size: 12px;
+  margin: 5px 5px;
+  color: #bbbbbb;
+}
+
+.author-name {
+  margin: 5px 5px;
+  font-size: 16px;
+}
+
+.author-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+    <div class="author-bio">
+      <img src="pict/aldyxquy.jpg" alt="Author" class="author-photo" />
+      <div class="author-details">
+        <p class="author-name">Write by: <strong>Aldyxaquy</strong></p>
+        <p class="author-date">@December 31, 2024</p>
+        <div class="author-links"></div>
+        <div class="wrapper">
+
+      <!-- Start threads Icon -->
+      <div id="threads" onclick="navigate(this.id)" class="social threads">
+        <span class="icon"><i class="fa-brands fa-threads"></i></span>
+      </div>
+      <!-- End threads Icon -->
+
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social instagram">
+        <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social youtube">
+        <span class="icon"><i class="fa-brands fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
+
+      <!-- Start whatsapp Icon -->
+      <div id="whatsapp" onclick="navigate(this.id)" class="social whatsapp">
+        <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+      </div>
+      <!-- End whatsapp Icon -->
+
+    </div>
+      </div>
+    </div>
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "threads")
+          window.open("https://www.threads.net/@aldyxquy", '_blank').focus (); //Url threads account
+
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/aldyxquy/", '_blank').focus(); //Url instagram account
+        }
+        
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/@xquy/featured", '_blank').focus(); //Url youtube account
+        }
+
+        else if (id === "youtube") {
+          window.open("https://bit.ly/wa-aldyndo", '_blank').focus(); //Url whatsapp account
+        }
+      }
+    </script>
+  </body>
+</html>
